@@ -1,6 +1,8 @@
 *** Settings ***
 Resource    ../Resources/PO/Login.Robot
 Resource    ../Resources/CommonWeb.robot
+Resource    ../Resources/PO/AccountSummary.robot
+
 Test Setup    Start Web Application
 Test Teardown    End Web Application
 
@@ -13,7 +15,7 @@ Test Teardown    End Web Application
 Login With Valid Credentials
     LoginValidCreds     ${username}     ${password}
     Verify The UserName
-    CommonWeb.Navigate through the modules    Account Activity
+    AccountSummary.Get All Headers
     CommonWeb.Logout WebPage
     sleep    2
 

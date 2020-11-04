@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20201104 11:34:30.111" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20201104 17:31:06.288" rpa="false">
 <suite id="s1" name="LoginTest" source="C:\development\robotScripts\ZeroBankRobot\tests\LoginTest.robot">
 <test id="s1-t1" name="Login With Valid Credentials">
 <kw name="Start Web Application" library="CommonWeb" type="setup">
@@ -9,14 +9,14 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:30.266" level="INFO">Opening browser 'chrome' to base url 'http://zero.webappsecurity.com/login.html'.</msg>
-<status status="PASS" starttime="20201104 11:34:30.266" endtime="20201104 11:34:34.447"></status>
+<msg timestamp="20201104 17:31:06.481" level="INFO">Opening browser 'chrome' to base url 'http://zero.webappsecurity.com/login.html'.</msg>
+<status status="PASS" starttime="20201104 17:31:06.480" endtime="20201104 17:31:10.811"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201104 11:34:34.448" endtime="20201104 11:34:36.596"></status>
+<status status="PASS" starttime="20201104 17:31:10.811" endtime="20201104 17:31:12.926"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:30.266" endtime="20201104 11:34:36.596"></status>
+<status status="PASS" starttime="20201104 17:31:06.480" endtime="20201104 17:31:12.926"></status>
 </kw>
 <kw name="LoginValidCreds">
 <arguments>
@@ -33,10 +33,10 @@
 <arg>${LoginPageUserNameElement}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:36.596" level="INFO">Typing text 'username' into text field 'id=user_login'.</msg>
-<status status="PASS" starttime="20201104 11:34:36.596" endtime="20201104 11:34:36.655"></status>
+<msg timestamp="20201104 17:31:12.927" level="INFO">Typing text 'username' into text field 'id=user_login'.</msg>
+<status status="PASS" starttime="20201104 17:31:12.927" endtime="20201104 17:31:12.984"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:36.596" endtime="20201104 11:34:36.655"></status>
+<status status="PASS" starttime="20201104 17:31:12.927" endtime="20201104 17:31:12.984"></status>
 </kw>
 <kw name="Input Password" library="Login">
 <arguments>
@@ -48,10 +48,10 @@
 <arg>${LoginPagePasswordElement}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:36.656" level="INFO">Typing text 'password' into text field 'id=user_password'.</msg>
-<status status="PASS" starttime="20201104 11:34:36.656" endtime="20201104 11:34:36.723"></status>
+<msg timestamp="20201104 17:31:12.985" level="INFO">Typing text 'password' into text field 'id=user_password'.</msg>
+<status status="PASS" starttime="20201104 17:31:12.984" endtime="20201104 17:31:13.050"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:36.655" endtime="20201104 11:34:36.723"></status>
+<status status="PASS" starttime="20201104 17:31:12.984" endtime="20201104 17:31:13.050"></status>
 </kw>
 <kw name="Sign In" library="Login">
 <kw name="Press Keys" library="SeleniumLibrary">
@@ -60,28 +60,28 @@
 <arg>${LoginPageSubmitButton}</arg>
 <arg>[Return]</arg>
 </arguments>
-<msg timestamp="20201104 11:34:36.723" level="INFO">Sending key(s) ('[Return]',) to name=submit element.</msg>
-<msg timestamp="20201104 11:34:38.335" level="INFO">Sending keys [Return]</msg>
-<status status="PASS" starttime="20201104 11:34:36.723" endtime="20201104 11:34:38.345"></status>
+<msg timestamp="20201104 17:31:13.051" level="INFO">Sending key(s) ('[Return]',) to name=submit element.</msg>
+<msg timestamp="20201104 17:31:14.669" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20201104 17:31:13.051" endtime="20201104 17:31:14.682"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath=//a[normalize-space()='Account Summary']</arg>
 </arguments>
-<status status="PASS" starttime="20201104 11:34:38.345" endtime="20201104 11:34:38.366"></status>
+<status status="PASS" starttime="20201104 17:31:14.682" endtime="20201104 17:31:14.703"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>${title}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:38.370" level="INFO">Page title is 'Zero - Account Summary'.</msg>
-<status status="PASS" starttime="20201104 11:34:38.366" endtime="20201104 11:34:38.370"></status>
+<msg timestamp="20201104 17:31:14.707" level="INFO">Page title is 'Zero - Account Summary'.</msg>
+<status status="PASS" starttime="20201104 17:31:14.703" endtime="20201104 17:31:14.707"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:36.723" endtime="20201104 11:34:38.370"></status>
+<status status="PASS" starttime="20201104 17:31:13.051" endtime="20201104 17:31:14.707"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:36.596" endtime="20201104 11:34:38.371"></status>
+<status status="PASS" starttime="20201104 17:31:12.927" endtime="20201104 17:31:14.707"></status>
 </kw>
 <kw name="Verify The UserName" library="Login">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -92,8 +92,8 @@
 <assign>
 <var>${name}</var>
 </assign>
-<msg timestamp="20201104 11:34:38.394" level="INFO">${name} = username</msg>
-<status status="PASS" starttime="20201104 11:34:38.371" endtime="20201104 11:34:38.394"></status>
+<msg timestamp="20201104 17:31:14.728" level="INFO">${name} = username</msg>
+<status status="PASS" starttime="20201104 17:31:14.708" endtime="20201104 17:31:14.729"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -101,23 +101,31 @@
 <arg>${name}</arg>
 <arg>${username}</arg>
 </arguments>
-<status status="PASS" starttime="20201104 11:34:38.394" endtime="20201104 11:34:38.394"></status>
+<status status="PASS" starttime="20201104 17:31:14.729" endtime="20201104 17:31:14.729"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:38.371" endtime="20201104 11:34:38.395"></status>
+<status status="PASS" starttime="20201104 17:31:14.707" endtime="20201104 17:31:14.729"></status>
 </kw>
-<kw name="Navigate through the modules" library="CommonWeb">
+<kw name="Get All Headers" library="AccountSummary">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
 <arguments>
-<arg>Account Activity</arg>
+<arg>${AccountSummaryPageMainTitles}</arg>
 </arguments>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//a[normalize-space()='${modulesName}']</arg>
-</arguments>
-<msg timestamp="20201104 11:34:38.395" level="INFO">Clicking element 'xpath=//a[normalize-space()='Account Activity']'.</msg>
-<status status="PASS" starttime="20201104 11:34:38.395" endtime="20201104 11:34:39.242"></status>
+<assign>
+<var>@{webelements}</var>
+</assign>
+<msg timestamp="20201104 17:31:14.739" level="INFO">@{webelements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="6a97eaaf28de8761ff46d1f94d4ff472", element="28b20416-3961-4c8f-9aee-cc9723678c93")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" starttime="20201104 17:31:14.730" endtime="20201104 17:31:14.739"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:38.395" endtime="20201104 11:34:39.242"></status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>@{webelements}[1]</arg>
+</arguments>
+<msg timestamp="20201104 17:31:14.739" level="WARN">Accessing variable items using '@{webelements}[1]' syntax is deprecated. Use '${webelements}[1]' instead.</msg>
+<status status="PASS" starttime="20201104 17:31:14.739" endtime="20201104 17:31:14.740"></status>
+</kw>
+<status status="PASS" starttime="20201104 17:31:14.729" endtime="20201104 17:31:14.740"></status>
 </kw>
 <kw name="Logout WebPage" library="CommonWeb">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -125,37 +133,37 @@
 <arguments>
 <arg>${MainPageUserName}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:39.243" level="INFO">Clicking element 'css=li.dropdown:nth-child(3) &gt; a'.</msg>
-<status status="PASS" starttime="20201104 11:34:39.243" endtime="20201104 11:34:39.279"></status>
+<msg timestamp="20201104 17:31:14.741" level="INFO">Clicking element 'css=li.dropdown:nth-child(3) &gt; a'.</msg>
+<status status="PASS" starttime="20201104 17:31:14.741" endtime="20201104 17:31:14.775"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${MainPageLogOut}</arg>
 </arguments>
-<msg timestamp="20201104 11:34:39.279" level="INFO">Clicking element '//a[normalize-space()='Logout']'.</msg>
-<status status="PASS" starttime="20201104 11:34:39.279" endtime="20201104 11:34:40.541"></status>
+<msg timestamp="20201104 17:31:14.775" level="INFO">Clicking element '//a[normalize-space()='Logout']'.</msg>
+<status status="PASS" starttime="20201104 17:31:14.775" endtime="20201104 17:31:15.778"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:39.243" endtime="20201104 11:34:40.541"></status>
+<status status="PASS" starttime="20201104 17:31:14.741" endtime="20201104 17:31:15.778"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20201104 11:34:42.549" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201104 11:34:40.541" endtime="20201104 11:34:42.549"></status>
+<msg timestamp="20201104 17:31:17.780" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201104 17:31:15.779" endtime="20201104 17:31:17.780"></status>
 </kw>
 <kw name="End Web Application" library="CommonWeb" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20201104 11:34:42.550" endtime="20201104 11:34:45.254"></status>
+<status status="PASS" starttime="20201104 17:31:17.781" endtime="20201104 17:31:19.877"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:42.550" endtime="20201104 11:34:45.254"></status>
+<status status="PASS" starttime="20201104 17:31:17.780" endtime="20201104 17:31:19.877"></status>
 </kw>
-<status status="PASS" starttime="20201104 11:34:30.266" endtime="20201104 11:34:45.254" critical="yes"></status>
+<status status="PASS" starttime="20201104 17:31:06.479" endtime="20201104 17:31:19.878" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201104 11:34:30.114" endtime="20201104 11:34:45.257"></status>
+<status status="PASS" starttime="20201104 17:31:06.289" endtime="20201104 17:31:19.879"></status>
 </suite>
 <statistics>
 <total>
@@ -169,6 +177,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20201104 11:34:30.266" level="ERROR">Error in file 'C:\development\robotScripts\ZeroBankRobot\Resources\CommonWeb.robot' on line 3: Variable file '..\Webelements.py' does not exist.</msg>
+<msg timestamp="20201104 17:31:06.470" level="ERROR">Error in file 'C:\development\robotScripts\ZeroBankRobot\Resources\CommonWeb.robot' on line 3: Variable file '..\Webelements.py' does not exist.</msg>
+<msg timestamp="20201104 17:31:14.739" level="WARN">Accessing variable items using '@{webelements}[1]' syntax is deprecated. Use '${webelements}[1]' instead.</msg>
 </errors>
 </robot>
