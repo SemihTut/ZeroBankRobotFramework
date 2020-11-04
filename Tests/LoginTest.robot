@@ -7,13 +7,15 @@ Test Teardown    End Web Application
 
 
 *** Variables ***
-#${username}    username
-#${password}    password
+
 
 *** Test Cases ***
 Login With Valid Credentials
     LoginValidCreds     ${username}     ${password}
     Verify The UserName
+    CommonWeb.Navigate through the modules    Account Activity
+    CommonWeb.Logout WebPage
+    sleep    2
 
 
 *** Keywords ***
